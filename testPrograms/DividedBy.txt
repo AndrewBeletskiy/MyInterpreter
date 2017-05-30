@@ -1,0 +1,16 @@
+{
+    write("Enter number: ");
+    read(N);
+    write("Enter possible divisor: ");
+    read(K);
+	temp1 := N;
+	temp2 := K;
+	do while (temp1 > 0 and temp2 > 0);
+		if temp1 > temp2
+			then temp1 := temp1 - temp2
+			else temp2 := temp2 - temp1;
+	end;
+	RES := temp1 + temp2;
+	if RES = K then write("Yes") else write("No");
+}
+

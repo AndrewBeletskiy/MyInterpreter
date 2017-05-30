@@ -1,0 +1,9 @@
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\bin\Debug\InterpreterForm.exe.config
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\bin\Debug\InterpreterForm.exe
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\bin\Debug\InterpreterForm.pdb
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\obj\Debug\InterpreterForm.csprojResolveAssemblyReference.cache
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\obj\Debug\InterpreterForm.Form1.resources
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\obj\Debug\InterpreterForm.Properties.Resources.resources
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\obj\Debug\InterpreterForm.csproj.GenerateResource.Cache
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\obj\Debug\InterpreterForm.exe
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\obj\Debug\InterpreterForm.pdb

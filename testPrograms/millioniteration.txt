@@ -1,0 +1,10 @@
+{	
+	read(a);
+	i := 1e7;
+	do while(i > 0);
+		i:= i - 1;
+	end;
+}
+
+
+

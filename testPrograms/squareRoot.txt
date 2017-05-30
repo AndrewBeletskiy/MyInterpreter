@@ -1,0 +1,20 @@
+{
+	write("Enter a: ");
+	read(startA);
+	left := 0;
+	right := startA;
+	if startA < 0 then 
+		write("This is negative number. Cant find square root")
+	else 
+		do while (zero = 0);
+			do while (right - left > 1e-14);
+				m := left + (right - left) * 0.5;
+				if [m * m > startA] then right := m
+									else left := m;
+			end;
+			write("Square root of ", startA," = ", m);
+			zero := 1;
+		end;
+}
+
+

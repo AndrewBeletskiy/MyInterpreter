@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first three.js app</title>
+    <style>
+    * { margin: 0; padding: 0;outline: 0;}
+    body, html {
+        height: 100%;
+        overflow: hidden;
+    }
+    #main-container {
+        background: #333;
+        border: 1px solid #eaeaea;
+        border-radius: 5px;
+        height: 100%;
+        position: relative;
+        font-family: Tahoma;
+        font-size: 16px;
+    }
+    #lineNumbers {
+        color: #f66;
+        
+        padding: 0;
+    }
+    #code {
+        position: absolute;
+        font-family: Consolas;
+        left: 20px;
+        top: 0;
+        padding: 0;
+        color: #bababa;
+        white-space: pre;
+    }
+    .keyword {
+        color: #fff;
+    }
+    .operator {
+        color: #0f0;
+    }
+    .parantheses {
+        color: #66f;
+    }
+    .string {
+        color: #b30;
+    }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <div id='lineNumbers'>
+        1<br>2<br>3<br>4<br>5<br>6<br>
+          </div>  
+          <pre id='code' contenteditable>{
+    a:=1;
+    b:=1;
+    read(,a);
+}</pre>
+    </div>
+    <script>
+        var pressed = false;
+        window.onkeydown = function(e) {
+            pressed = true;
+            
+        };
+        window.onmousemove = function(e) {
+            pressed = true;
+        };
+        
+        var codeElem = document.getElementById("code");
+        var lineNumbersElem = document.getElementById("lineNumbers");
+
+        function getText() {
+            return codeElem.innerText;
+        }
+        function getRawText() {
+            var text = getText();
+            while (text.indexOf(/<\S+.*?>/) > 0)
+                text = text.replace(/<\S+.*?>/, "");
+            return text;
+        }
+
+        String.prototype.replaceAll = function(search, replacement) {
+            var target = this;
+            return target.replace(new RegExp(search, 'g'), replacement);
+        };
+
+        function setKeyword(text) {
+
+            text = text.replaceAll("read", "<span class='keyword'>read</span>");
+            text = text.replaceAll("write","<span class='keyword'>write</span>");
+            text = text.replaceAll("if", "<span class='keyword'>if</span>");
+            text = text.replaceAll("then", "<span class='keyword'>then</span>");
+            text = text.replaceAll("else", "<span class='keyword'>else</span>");
+            text = text.replaceAll("end", "<span class='keyword'>end</span>");
+            text = text.replaceAll("or\s", "<span class='keyword'>or </span>");
+            text = text.replaceAll("and", "<span class='keyword'>and</span>");
+            text = text.replaceAll("not", "<span class='keyword'>not</span>");
+            text = text.replaceAll("do", "<span class='keyword'>do</span>");
+            text = text.replaceAll("while", "<span class='keyword'>while</span>");
+            text = text.replaceAll("end", "<span class='keyword'>end</span>");
+            text = text.replaceAll("\\(", "<span class='parantheses'>(</span>");
+            text = text.replaceAll("\\)", "<span class='parantheses'>)</span>");
+            return text;
+        }
+
+        setInterval(function setColors() {
+            var text = getRawText();
+            var lineNumber = text.split(/\r\n|\r|\n/).length;
+            var newLineNumbers = "";
+            for (var i = 0; i < lineNumber; i++) {
+                newLineNumbers += (i+1) + "<br>";
+            }
+            lineNumbersElem.innerHTML = newLineNumbers;
+            //alert(lineNumber);
+        }, 16);
+        setInterval(function setColors() {
+                if (pressed) {
+                    pressed = false;
+                    return;
+                }
+
+                codeElem.innerHTML = setKeyword(getRawText());
+            }, 5000);
+    </script>
+   
+    
+   
+</body>
+</html>

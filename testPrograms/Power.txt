@@ -1,0 +1,17 @@
+{
+	write("Power \nEnter x: ");
+	read(x);
+	write("Enter k: ");
+	read(startK);
+	res := 1;
+	k := startK;
+	do while (k > 0);
+		res := res * x;
+		k := k -1;
+	end;
+	write(x," to power ",startK, " is ", res);
+	
+}
+
+
+

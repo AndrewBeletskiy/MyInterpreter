@@ -1,0 +1,16 @@
+{
+	write("Multiplying table: \n");
+	i := 1;
+	do while (i <= 10);
+		j := 1;
+		do while (j <= 10);
+			c := i * j;
+			write(c, "\t");
+			j := j + 1;
+		end;
+		write("\n");
+		i := i + 1;
+	end;
+}
+
+

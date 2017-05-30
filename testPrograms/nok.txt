@@ -1,0 +1,35 @@
+{
+	write("Enter a: ");
+	read(startA);
+	write("Enter b: ");
+	read(startB);
+	a := startA;
+	b := startB;
+	do while (a > 0 and b > 0);
+		if a > b then a := a - b
+				 else b := b - a;
+	end;
+	c := a + b;
+	res := startA / c * startB;
+	write("Nok ", startA, " and ", startB, " is ", res);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

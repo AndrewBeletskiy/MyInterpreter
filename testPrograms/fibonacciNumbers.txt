@@ -1,0 +1,25 @@
+{
+	write("Fibonacci Numbers\nEnter n: ");
+	read(n);
+	if n = 0 then
+		write("0")
+	else if n = 1 then
+		write("0\n1")
+	else do while (zero = 0);
+		zero := 1;
+		write("0\n1\n");
+		a := 0;
+		b := 1;
+		i := 2;
+		do while (i < n);
+			c := a+b;
+			write(c,"\n");
+			a := b;
+			b := c;
+			i := i + 1;
+		end;
+	end;
+}
+
+
+

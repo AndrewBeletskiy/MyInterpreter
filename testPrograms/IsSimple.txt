@@ -1,0 +1,26 @@
+{
+    write("Enter number: ");
+    read(N);
+	temp3 := 2;
+	temp4 := N;
+	RES := 2;
+	do while (temp3 * temp3 <= temp4 and RES = 2);
+		temp1 := temp4;
+	    temp2 := temp3;
+	    do while (temp1 > 0 and temp2 > 0);
+	        if temp1 > temp2
+	            then temp1 := temp1 - temp2
+	            else temp2 := temp2 - temp1;
+	    end;
+	    RES := temp1 + temp2;
+	    if RES = temp3 then RES := 1 else RES := 0;
+	    if RES = 0 then RES := 2 else RES := 1;
+		temp3 := temp3 + 1;		
+	end;
+	if RES = 2 then RES := 1 else RES := 0;
+
+	if RES = 1 
+		then write(N, " is simple.")
+		else write(N, " is not simple.");			
+}
+

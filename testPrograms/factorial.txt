@@ -1,0 +1,14 @@
+{
+	write("FACTORIAL\n");
+	write("Enter n: ");
+	read(startN);
+	res := 1;
+	n := startN;
+	do while (n > 0);
+		res := res * n;
+		n := n -1;
+	end;
+	write("Factorial of ", startN, " is ",res);
+}
+
+

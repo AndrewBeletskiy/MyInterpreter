@@ -1,0 +1,15 @@
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\bin\x86\Debug\InterpreterForm.exe.config
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\bin\x86\Debug\InterpreterForm.exe
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\bin\x86\Debug\InterpreterForm.pdb
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\bin\x86\Debug\CefSharp.Core.dll
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\bin\x86\Debug\CefSharp.dll
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\bin\x86\Debug\CefSharp.pdb
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\bin\x86\Debug\CefSharp.xml
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\bin\x86\Debug\CefSharp.Core.pdb
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\bin\x86\Debug\CefSharp.Core.xml
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\obj\x86\Debug\InterpreterForm.csprojResolveAssemblyReference.cache
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\obj\x86\Debug\InterpreterForm.Form1.resources
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\obj\x86\Debug\InterpreterForm.Properties.Resources.resources
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\obj\x86\Debug\InterpreterForm.csproj.GenerateResource.Cache
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\obj\x86\Debug\InterpreterForm.exe
+D:\Programming\CSharp\InterpreterForm\InterpreterForm\obj\x86\Debug\InterpreterForm.pdb
